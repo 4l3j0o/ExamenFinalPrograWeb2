@@ -1,0 +1,20 @@
+$kind: http-request
+name: Actualizar Prueba de Alcoholemia / Dosaje
+description: Consigna los resultados oficiales de la prueba de alcohotest o análisis de sangre.
+url: "{{baseUrl}}/personas-involucradas/:id/alcoholemia"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+pathVariables:
+  id: "1"
+body:
+  type: text
+  content: |-
+    {
+      "gradoAlcoholemiaGral": 1.45,
+      "estadoAlcoholemia": "positivo",
+      "numeroActaDosaje": "DOS-TJ-2026-441",
+      "laboratorio": "Laboratorio Toxicol\u00f3gico IDIF Tarija"
+    }
+order: 2000

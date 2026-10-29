@@ -1,0 +1,27 @@
+$kind: http-request
+description: Registra conductores, pasajeros, peatones o ciclistas afectados en el siniestro.
+url: "{{baseUrl}}/personas-involucradas"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+body:
+  type: text
+  content: |-
+    {
+      "accidenteId": 1,
+      "vehiculoId": 1,
+      "nombres": "Rodrigo",
+      "apellidos": "Guti\u00e9rrez Vaca",
+      "ci": "5829103 TJ",
+      "telefono": "+59172981234",
+      "rol": "conductor",
+      "numeroLicencia": "5829103-TJ",
+      "categoriaLicencia": "C",
+      "gradoAlcoholemiaGral": 0.0,
+      "estadoAlcoholemia": "sobrio",
+      "estadoSalud": "lesionado_leve",
+      "centroMedicoTraslado": "Hospital Regional San Juan de Dios (HRSJD)",
+      "diagnosticoPreliminar": "Policontuso con contusi\u00f3n en hombro derecho"
+    }
+order: 1000

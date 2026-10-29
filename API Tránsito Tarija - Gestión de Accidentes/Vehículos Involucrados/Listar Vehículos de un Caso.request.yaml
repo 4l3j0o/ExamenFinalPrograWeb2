@@ -1,0 +1,9 @@
+$kind: http-request
+description: Devuelve todos los motorizados involucrados en un accidente dado.
+url: "{{baseUrl}}/accidentes/:id/vehiculos"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+pathVariables:
+  id: "1"
+order: 2000

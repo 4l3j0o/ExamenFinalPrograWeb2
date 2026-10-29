@@ -1,0 +1,15 @@
+$kind: http-request
+name: Iniciar Sesión (Oficial / Perito)
+description: Autenticación para investigadores y oficiales de Tránsito Tarija.
+url: "{{baseUrl}}/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "numeroEscalafon": "ESC-78921",
+      "password": "ClaveSeguraPol!2026"
+    }
+order: 1000

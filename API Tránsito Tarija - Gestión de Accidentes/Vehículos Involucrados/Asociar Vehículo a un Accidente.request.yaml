@@ -1,0 +1,24 @@
+$kind: http-request
+description: Registra las características, seguro SOAT y daños del vehículo protagonista.
+url: "{{baseUrl}}/vehiculos-involucrados"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+body:
+  type: text
+  content: |-
+    {
+      "accidenteId": 1,
+      "placa": "3492-XTL",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "tipoVehiculo": "Autom\u00f3vil Particular",
+      "color": "Plata Met\u00e1lico",
+      "numeroChasis": "2T1BR32E85C129031",
+      "soatVigente": true,
+      "aseguradora": "Seguros Alianza",
+      "descripcionDanios": "Deformaci\u00f3n severa del paragolpes delantero, rotura de \u00f3ptica izquierda y radiador perforado.",
+      "remolcadoA": "Dep\u00f3sito Policial Tr\u00e1nsito Morros Blancos"
+    }
+order: 1000

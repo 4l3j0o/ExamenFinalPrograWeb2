@@ -1,0 +1,26 @@
+$kind: http-request
+description: Crea el parte preliminar de un accidente vial ocurrido en la jurisdicción de Tarija.
+url: "{{baseUrl}}/accidentes"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+body:
+  type: text
+  content: |-
+    {
+      "codigoCaso": "TRJ-ACC-2026-0842",
+      "fechaHora": "2026-10-28T14:35:00Z",
+      "tipoAccidente": "Colisi\u00f3n Frontal",
+      "gravedad": "con_heridos",
+      "zonaBarrio": "Barrio San Mart\u00edn",
+      "direccionReferencia": "Av. Las Am\u00e9ricas y C. Juan Misael Saracho",
+      "distrito": "Distrito 1",
+      "latitud": -21.535492,
+      "longitud": -64.729918,
+      "condicionClimatica": "Despejado",
+      "estadoCalzada": "Seca",
+      "oficialAsignadoId": 1,
+      "observaciones": "Uno de los conductores no respet\u00f3 la se\u00f1al de pare en intersecci\u00f3n semaforizada intermitente."
+    }
+order: 3000

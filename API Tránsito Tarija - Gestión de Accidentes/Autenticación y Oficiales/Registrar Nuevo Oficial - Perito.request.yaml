@@ -1,0 +1,21 @@
+$kind: http-request
+name: Registrar Nuevo Oficial / Perito
+description: Alta de personal policial asignado al sistema de accidentes.
+url: "{{baseUrl}}/oficiales"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+body:
+  type: text
+  content: |-
+    {
+      "nombres": "Juan Carlos",
+      "apellidos": "Torrez Miranda",
+      "grado": "Sargento Primero",
+      "numeroEscalafon": "ESC-81204",
+      "cargo": "Investigador Especial",
+      "unidad": "Divisi\u00f3n Accidentes",
+      "activo": true
+    }
+order: 2000

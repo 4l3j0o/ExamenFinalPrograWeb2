@@ -1,0 +1,19 @@
+$kind: http-request
+description: Modifica el estatus legal del expediente (en_investigacion, conciliado, remitido_fiscalia, cerrado).
+url: "{{baseUrl}}/accidentes/:id/estado"
+method: PATCH
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+pathVariables:
+  id: "1"
+body:
+  type: text
+  content: |-
+    {
+      "estadoCaso": "remitido_fiscalia",
+      "juzgadoOInstitucion": "Fiscal\u00eda Departamental de Tarija - Divisi\u00f3n Delitos Contra la Vida",
+      "numeroCuadernoInvestigacion": "IANUS-2026-99381",
+      "motivoPase": "Alcoholemia positiva y lesiones graves a peat\u00f3n"
+    }
+order: 4000

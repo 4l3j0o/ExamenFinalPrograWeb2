@@ -1,0 +1,21 @@
+$kind: http-request
+description: Almacena las conclusiones de la División Especial de Peritajes Técnicos de Tránsito.
+url: "{{baseUrl}}/peritajes"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{authToken}}
+body:
+  type: text
+  content: |-
+    {
+      "accidenteId": 1,
+      "peritoId": 1,
+      "fechaPeritaje": "2026-10-28",
+      "velocidadEstimadaImpactoKmh": 68.5,
+      "huellaFrenadoMetros": 18.4,
+      "factorDeterminante": "Exceso de velocidad e inobservancia a la se\u00f1al\u00e9tica de prioridad vial",
+      "conclusiones": "El veh\u00edculo con placa 3492-XTL ingres\u00f3 al cruce vial superando el l\u00edmite reglamentario de 40 km/h en zona urbana, perdiendo la adherencia al realizar la maniobra evasiva.",
+      "croquisUrl": "https://storage.transito-tarija.gob.bo/croquis/TRJ-ACC-2026-0842.pdf"
+    }
+order: 1000

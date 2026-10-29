@@ -1,0 +1,10 @@
+$kind: http-request
+name: Mapa de Calor / Zonas de Mayor Incidencia
+description: Retorna coordenadas geográficas agrupadas por frecuencia de accidentes en avenidas y puentes de Tarija (ej. Av. Panamericana, Av. Integración, Rotonda del Moto Méndez).
+url: "{{baseUrl}}/estadisticas/puntos-criticos?anio=2026"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+queryParams:
+  anio: "2026"
+order: 1000

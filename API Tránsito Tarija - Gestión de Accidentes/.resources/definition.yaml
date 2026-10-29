@@ -1,0 +1,5 @@
+$kind: collection
+description: Colección completa para la API REST de registro, peritaje y seguimiento de accidentes de tránsito en el Municipio de Tarija (Organismo Operativo de Tránsito). Compatible con Flashpost / Postman v2.1.0.
+variables:
+  baseUrl: http://localhost:5000/api/v1
+  authToken: ""

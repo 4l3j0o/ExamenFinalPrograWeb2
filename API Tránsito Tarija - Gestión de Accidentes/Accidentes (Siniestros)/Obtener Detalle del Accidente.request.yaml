@@ -1,0 +1,11 @@
+$kind: http-request
+description: Recupera la ficha completa con vehículos, personas involucradas y estado legal.
+url: "{{baseUrl}}/accidentes/:id"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+pathVariables:
+  - key: id
+    value: "1"
+    description: ID del accidente
+order: 2000

@@ -1,0 +1,17 @@
+$kind: http-request
+description: Lista paginada de siniestros viales con filtros de geolocalización y severidad.
+url: "{{baseUrl}}/accidentes?distrito=Distrito 1&gravedad=con_heridos&fechaDesde=2026-10-01"
+method: GET
+headers:
+  Authorization: Bearer {{authToken}}
+queryParams:
+  - key: distrito
+    value: Distrito 1
+    description: Filtro por distrito municipal de Tarija
+  - key: gravedad
+    value: con_heridos
+    description: solo_danos, con_heridos, fatal
+  - key: fechaDesde
+    value: 2026-10-01
+    description: Fecha inicial de reporte
+order: 1000

@@ -1,0 +1,8 @@
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
